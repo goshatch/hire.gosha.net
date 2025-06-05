@@ -41,10 +41,21 @@ module.exports = {
     'xl:row-span-2',
     'xl:row-start-1',
     'xl:grid-flow-col',
+    // Projects grid responsive classes
+    'md:grid-cols-2',
+    'lg:grid-cols-3',
     // Color classes
     'text-primary',
     'text-secondary',
-    'bg-surface'
+    'bg-surface',
+    // Additional classes for projects
+    'bg-opacity-50',
+    'bg-opacity-75',
+    'hover:bg-opacity-75',
+    'hover:text-primary',
+    'btn-sm',
+    'target:_blank',
+    'ring-primary'
   ],
   plugins: [],
 }
