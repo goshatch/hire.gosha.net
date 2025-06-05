@@ -1,0 +1,35 @@
+# Shadow-cljs
+.shadow-cljs/
+public/js/
+
+# Node modules
+node_modules/
+
+# Clojure
+.cpcache/
+.clj-kondo/
+.lsp/
+
+# Build outputs
+target/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

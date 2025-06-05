@@ -1,0 +1,13 @@
+{
+  "name": "hire-gosha-v2",
+  "version": "1.0.0",
+  "description": "Gosha's hiring site - ClojureScript version",
+  "scripts": {
+    "dev": "shadow-cljs watch app",
+    "build": "shadow-cljs release app",
+    "serve": "shadow-cljs serve"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.28.10"
+  }
+}
