@@ -1,6 +1,7 @@
 # Shadow-cljs
 .shadow-cljs/
 public/js/
+public/css/styles.css
 
 # Node modules
 node_modules/

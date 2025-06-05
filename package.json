@@ -3,11 +3,19 @@
   "version": "1.0.0",
   "description": "Gosha's hiring site - ClojureScript version",
   "scripts": {
-    "dev": "shadow-cljs watch app",
-    "build": "shadow-cljs release app",
-    "serve": "shadow-cljs serve"
+    "dev": "npm run css:watch & shadow-cljs watch app",
+    "build": "npm run css:build && shadow-cljs release app",
+    "serve": "shadow-cljs server",
+    "css:build": "postcss src/styles.css -o public/css/styles.css",
+    "css:watch": "postcss src/styles.css -o public/css/styles.css --watch"
   },
   "devDependencies": {
-    "shadow-cljs": "^2.28.10"
+    "@tailwindcss/postcss": "^4.1.5",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "postcss-cli": "^11.0.1",
+    "postcss-nesting": "^13.0.1",
+    "shadow-cljs": "^2.28.10",
+    "tailwindcss": "^4.1.5"
   }
 }

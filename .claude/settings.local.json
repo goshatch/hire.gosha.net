@@ -3,7 +3,12 @@
     "allow": [
       "Bash(npm install)",
       "Bash(npm run dev:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run css:build:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }
