@@ -45,28 +45,29 @@
        ^{:key (:name skill)}
        (pill-component skill))]]])
 
+(defn split-into-columns "Split collection into roughly equal groups for columns"
+  [coll num-columns]
+  (let [items-per-column (Math/ceil (/ (count coll) num-columns))]
+    (partition-all items-per-column coll)))
+
 (defn testimonials-section [{:keys [testimonials]}]
-  [:div.testimonials.mx-auto.max-w-7xl.px-6.lg:px-8
-   [:div.mx-auto.max-w-2xl.text-center
-    [:h3.text-4xl.font-semibold.text-primary.mb-4 "Testimonials"]
-    [:p.mt-2.text-balance.text-primary "What people I have worked with have to say—"]]
-   [:div.mx-auto.mt-8.grid.max-w-2xl.grid-cols-1.gap-8.sm:grid-cols-2.xl:mx-0.xl:max-w-none.xl:grid-cols-4
-    [:div.space-y-8.xl:contents.xl:space-y-0
-     [:div.space-y-8.xl:row-span-2
-      (for [testimonial (take 3 testimonials)]
-        ^{:key (:author testimonial)}
-        (testimonial-component testimonial))]
-     [:div.space-y-8.xl:row-start-1
-      (for [testimonial (drop 3 testimonials)]
-        ^{:key (:author testimonial)}
-        (testimonial-component testimonial))]]
-    [:div.space-y-8.xl:contents.xl:space-y-0
-     [:div.space-y-8.xl:row-start-1]
-     [:div.space-y-8.xl:row-span-2]]]
-   [:div.mt-20.text-center
-    [:a.btn.btn-bounce.px-12.py-6.text-2xl.font-bold.rounded-full.shadow-lg
-     {:href (get-in data/site-data [:personal :cal-url]) :id "bottom-cta"}
-     "🤙 Book a 30-min call"]]])
+  (let [shuffled-testimonials (shuffle testimonials)
+        testimonial-columns (split-into-columns shuffled-testimonials 4)]
+    [:div.testimonials.mx-auto.max-w-7xl.px-6.lg:px-8
+     [:div.mx-auto.max-w-2xl.text-center
+      [:h3.text-4xl.font-semibold.text-primary.mb-4 "Testimonials"]
+      [:p.mt-2.text-balance.text-primary "What people I have worked with have to say—"]]
+     [:div.mx-auto.mt-8.grid.max-w-2xl.grid-cols-1.grid-rows-1.gap-8.text-sm.text-primary.sm:grid-cols-2.xl:mx-0.xl:max-w-none.xl:grid-flow-col.xl:grid-cols-4
+      (for [[index column] (map-indexed vector testimonial-columns)]
+        ^{:key (str "testimonial-column-" index)}
+        [:div.space-y-8
+         (for [testimonial column]
+           ^{:key (:author testimonial)}
+           (testimonial-component testimonial))])]
+     [:div.mt-20.text-center
+      [:a.btn.btn-bounce.px-12.py-6.text-2xl.font-bold.rounded-full.shadow-lg
+       {:href (get-in data/site-data [:personal :cal-url]) :id "bottom-cta"}
+       "🤙 Book a 30-min call"]]]))
 
 (defn app []
   [:div.relative.isolate.pt-24.pb-32
