@@ -21,6 +21,9 @@
     {:name "Async Communication" :icon "💬"}
     {:name "Long-form Writing" :icon "✍️"}]
 
+   :projects
+   []
+
    :testimonials
    [{:quote "I've worked with Gosha on many projects over the years. Not only is he an excellent developer and expert in his craft, but he's also a true \"maker\", deeply curious and engaged in every aspect of product development. He brings the same level of attention to both the technical implementation and the user experience. As a designer, that quality makes him easily one of my favorite software developers to work with."
      :author "Mathieu Mayer"
