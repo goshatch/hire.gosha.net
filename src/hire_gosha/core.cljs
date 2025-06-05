@@ -21,20 +21,20 @@
         author)]
      [:div.text-secondary title]]]])
 
-(defn hero-section [{:keys [personal]}]
-  (let [{:keys [name title greeting emoji website-url cal-url photo]} personal]
-    [:div.relative
-     [:div.flex.flex-col.lg:flex-row.lg:items-center.gap-8.lg:gap-12.mb-16
-      [:div.flex-shrink-0
-       [:img.w-120.h-80.lg:w-144.lg:h-96.rounded-sm.shadow-2xl.border-8.border-white.transform.-rotate-3.object-cover
-        {:src photo :alt name}]]
-      [:div.flex-1.px-6.lg:px-8
-       [:h1.text-5xl.font-bold.text-primary.leading-tight
-        greeting " " [:a.underline {:href website-url} "Gosha"] " " emoji]
-       [:p.text-4xl.font-bold.leading-tight.mt-4 title]
-       [:a.btn.btn-pop.rounded-full.mt-6.px-6.py-3
-        {:href cal-url}
-        "👉 Let's talk"]]]]))
+(defn hero-section []
+  [:div.relative
+   [:div.flex.flex-col.lg:flex-row.lg:items-center.gap-8.lg:gap-12.mb-16
+    [:div.flex-shrink-0
+     [:img.w-120.h-80.lg:w-144.lg:h-96.rounded-sm.shadow-2xl.border-8.border-white.transform.-rotate-3.object-cover
+      {:src "/images/profile.jpg" :alt "Gosha Tcherednitchenko"}]]
+    [:div.flex-1.px-6.lg:px-8
+     [:h1.text-5xl.font-bold.text-primary.leading-tight
+      "Hi, I'm " [:a.underline {:href "https://gosha.net"} "Gosha"] " 👋"]
+     [:p.text-4xl.font-bold.leading-tight.mt-4 
+      "Full-stack, 20 years of experience, looking for work!"]
+     [:a.btn.btn-pop.rounded-full.mt-6.px-6.py-3
+      {:href "https://cal.com/a.possible.space/30min"}
+      "👉 Let's talk"]]]])
 
 (defn skills-section [{:keys [skills]}]
   [:div.mx-auto.max-w-4xl.px-6.lg:px-8.py-16
@@ -66,12 +66,12 @@
            (testimonial-component testimonial))])]
      [:div.mt-20.text-center
       [:a.btn.btn-bounce.px-12.py-6.text-2xl.font-bold.rounded-full.shadow-lg
-       {:href (get-in data/site-data [:personal :cal-url]) :id "bottom-cta"}
+       {:href "https://cal.com/a.possible.space/30min" :id "bottom-cta"}
        "🤙 Book a 30-min call"]]]))
 
 (defn app []
   [:div.relative.isolate.pt-24.pb-32
-   (hero-section data/site-data)
+   (hero-section)
    (skills-section data/site-data)
    (testimonials-section data/site-data)])
 
