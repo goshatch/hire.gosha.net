@@ -4,9 +4,9 @@
   "description": "Gosha's hiring site - ClojureScript version",
   "scripts": {
     "dev": "npm run css:watch & shadow-cljs watch app",
-    "build": "npm run css:build && shadow-cljs release app",
+    "build": "rm -rf dist && mkdir -p dist && npm run css:build && shadow-cljs release app && cp -r public/* dist/",
     "serve": "shadow-cljs server",
-    "css:build": "postcss src/styles.css -o public/css/styles.css",
+    "css:build": "postcss src/styles.css -o dist/css/styles.css",
     "css:watch": "postcss src/styles.css -o public/css/styles.css --watch"
   },
   "devDependencies": {

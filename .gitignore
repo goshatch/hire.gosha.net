@@ -3,6 +3,8 @@
 public/js/
 public/css/styles.css
 
+dist
+
 # Node modules
 node_modules/
 
