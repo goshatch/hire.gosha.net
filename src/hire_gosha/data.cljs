@@ -51,7 +51,7 @@
 
     {:quote "Gosha is a talented full-stack engineer with a knack for delivering intuitive user experiences. He cares about outcomes, delivers high quality work, and is a great addition to any startup or established engineering team."
      :author "Charles Abbott"
-     :title "Senior Director, Engineering, Workiva"
+     :title "Senior Director, Engineering at Workiva"
      :url "https://www.workiva.com/"
      :photo "/images/people/charles.jpg"}
 
@@ -63,5 +63,23 @@
 
     {:quote "Working with Gosha was like having a strategic co-founder who also writes exceptional code. He quickly grasped the business goals, translated them into clean, scalable architecture, and kept me informed of potential risks long before they became issues. His mix of business acumen and full-stack expertise made our launch smooth and our growth trajectory clear. I recommend him without reservation."
      :author "Nahoko Tateyama"
-     :title "Business Tech Director, SquareTrade"
-     :photo "/images/people/nahoko.jpg"}]})
+     :title "Business Tech Director at SquareTrade"
+     :photo "/images/people/nahoko.jpg"}
+
+    {:quote "Over the past five years, I’ve had the luck of working with Gosha both directly—as part of the same cross-functional team—and indirectly as part of the same larger engineering organisation.
+
+In every instance, Gosha has been a helpful, collaborative, and fun team player. He brought strong value to both the backend and frontend codebase of our applications.
+
+Additionally G’s background and interest in (web)design was radiant in his thoughtful approach to building and suggesting user-centered solutions, always with accessibility in mind.
+
+He’s a reliable contributor, pleasure to work with as a colleague, and I highly recommend him as a teammate."
+     :author "Marek Labos"
+     :title "Senior Software Engineer at Indeed"
+     :url "https://www.linkedin.com/in/marek-labos"
+     :photo "/images/people/marek.jpg"}
+
+    {:quote "Gosha brought a strong mix of front-end engineering and design skills when we worked together at Cookpad. He helped build out the mobile web version with solid work in Ruby, JavaScript, and CSS, and his ability to move between design and code made things smoother for the whole team."
+     :author "Viktor Kelemen"
+     :url "https://www.linkedin.com/in/viktorkelemen/"
+     :title "Software Engineer at Meta"
+     :photo "/images/people/viktor.jpg"}]})
