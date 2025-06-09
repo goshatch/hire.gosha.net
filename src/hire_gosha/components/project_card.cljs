@@ -1,15 +1,14 @@
 (ns hire-gosha.components.project-card)
 
 (defn project-card [{:keys [title company year description images link github important]}]
-  [:div.flex-shrink-0
-   ;; Single image - viewport height based, width auto-adjusts
-   [:div.bg-gray-100.relative.rounded-lg.overflow-hidden.mb-4
-    {:class ["h-[40vh]" "md:h-[50vh]"]}
-    [:img.h-full.object-cover
-     {:src (first images)
-      :alt title}]]
+  [:div.inline-block
+   ;; Single image - natural inline behavior with height constraint
+   [:img.rounded-lg.mb-4
+    {:class ["h-[40vh]" "md:h-[50vh]"]
+     :src (first images)
+     :alt title}]
    
-   ;; Short description underneath
+   ;; Short description underneath - matches image width
    [:div
     [:h4.text-lg.font-semibold.text-primary.mb-1 title]
     [:p.text-sm.text-secondary.mb-2

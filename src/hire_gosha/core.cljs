@@ -19,8 +19,8 @@
 (defn app []
   [:div.relative.isolate.pt-24.pb-32
    (hero)
-   (skills (:skills data/site-data))
    (projects (:projects data/site-data))
+   (skills (:skills data/site-data))
    (testimonials (:testimonials data/site-data))
    (footer)])
 
