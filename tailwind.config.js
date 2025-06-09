@@ -55,7 +55,16 @@ module.exports = {
     'hover:text-primary',
     'btn-sm',
     'target:_blank',
-    'ring-primary'
+    'ring-primary',
+    // Footer responsive classes
+    'md:flex-row',
+    'md:justify-between',
+    'md:items-center',
+    'md:flex-wrap',
+    // Social link pseudo-element classes
+    'before:content-[var(--emoji)]',
+    'before:mr-1',
+    'before:no-underline'
   ],
   plugins: [],
 }

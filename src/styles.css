@@ -70,6 +70,10 @@ a:hover {
   color: var(--color-link-hover);
 }
 
+a.no-underline {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.2;
   font-weight: 600;
@@ -104,12 +108,24 @@ code {
   background-color: var(--color-link);
   color: var(--color-testimonials-bg);
   font-weight: 600;
-  transition: background-color 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .btn:hover {
   background-color: var(--color-link-hover);
   color: var(--color-testimonials-bg);
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1px solid var(--color-link);
+  color: var(--color-text);
+}
+
+.btn.outline:hover {
+  background-color: transparent;
+  border-color: var(--color-link-hover);
+  color: var(--color-link-hover);
 }
 
 .btn-pop:hover {

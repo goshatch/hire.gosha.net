@@ -8,7 +8,9 @@
       "Bash(npm uninstall:*)",
       "Bash(npm run css:build:*)",
       "Bash(npx tailwindcss:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(npx shadow-cljs:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
