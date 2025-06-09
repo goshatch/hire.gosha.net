@@ -28,7 +28,6 @@
 
 (defn testimonials [testimonials]
   (let [testimonial-columns (split-into-columns testimonials 4)]
-    (js/console.log "Columns: " (clj->js testimonial-columns))
     [:div.testimonials.mx-auto.max-w-7xl.px-6.lg:px-8
      [:div.mx-auto.max-w-2xl.text-center
       [:h3.text-4xl.font-semibold.text-primary.mb-4 "Testimonials"]

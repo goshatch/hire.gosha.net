@@ -4,7 +4,7 @@
   [:div.flex-shrink-0
    ;; Single image - viewport height based, width auto-adjusts
    [:div.bg-gray-100.relative.rounded-lg.overflow-hidden.mb-4
-    {:class "h-[40vh] md:h-[50vh]"}
+    {:class ["h-[40vh]" "md:h-[50vh]"]}
     [:img.h-full.object-cover
      {:src (first images)
       :alt title}]]
