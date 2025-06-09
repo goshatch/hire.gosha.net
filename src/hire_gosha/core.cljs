@@ -37,8 +37,6 @@
       (.observe @observer bottom-cta))))
 
 (defn init []
-  ;; Set the re-render function for project cards
-  (project-card/set-re-render-fn! re-render!)
   (when-let [app-element (.getElementById js/document "app")]
     (d/render app-element (app))
     (setup-animations!)))

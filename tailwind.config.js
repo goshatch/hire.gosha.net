@@ -64,7 +64,11 @@ module.exports = {
     // Social link pseudo-element classes
     'before:content-[var(--emoji)]',
     'before:mr-1',
-    'before:no-underline'
+    'before:no-underline',
+    // Project carousel classes
+    'scrollbar-hide',
+    'line-clamp-2',
+    'flex-shrink-0'
   ],
   plugins: [],
 }

@@ -1,18 +1,34 @@
 (ns hire-gosha.components.testimonials
   (:require [hire-gosha.components.testimonial :as testimonial]))
 
-(defn split-into-columns "Split collection into roughly equal groups for columns"
+(defn split-into-columns "Split collection into exactly num-columns columns, prioritizing middle columns for extra items"
   [coll num-columns]
-  (let [items-per-column (Math/ceil (/ (count coll) num-columns))]
-    (partition-all items-per-column coll)))
-
-;; Stable shuffled testimonials to avoid reshuffling on re-render
-(defonce shuffled-testimonials-cache (atom nil))
+  (let [total-items (count coll)
+        base-items-per-column (quot total-items num-columns)
+        extra-items (rem total-items num-columns)
+        ;; For 4 columns with 1 extra: middle columns are 1,2 (0-indexed)
+        ;; For 4 columns with 2 extra: middle columns are 1,2 (0-indexed)
+        middle-cols (case num-columns
+                      4 [1 2 0 3] ; priority order: middle first, then outer
+                      [0 1 2 3])] ; fallback for other column counts
+    (loop [remaining coll
+           columns []
+           col-index 0]
+      (if (or (empty? remaining) (>= col-index num-columns))
+        columns
+        (let [priority-rank (.indexOf middle-cols col-index)
+              gets-extra? (< priority-rank extra-items)
+              items-in-this-column (+ base-items-per-column 
+                                      (if gets-extra? 1 0))
+              column (take items-in-this-column remaining)
+              new-remaining (drop items-in-this-column remaining)]
+          (recur new-remaining
+                 (conj columns column)
+                 (inc col-index)))))))
 
 (defn testimonials [testimonials]
-  (let [shuffled-testimonials (or @shuffled-testimonials-cache
-                                  (reset! shuffled-testimonials-cache (shuffle testimonials)))
-        testimonial-columns (split-into-columns shuffled-testimonials 4)]
+  (let [testimonial-columns (split-into-columns testimonials 4)]
+    (js/console.log "Columns: " (clj->js testimonial-columns))
     [:div.testimonials.mx-auto.max-w-7xl.px-6.lg:px-8
      [:div.mx-auto.max-w-2xl.text-center
       [:h3.text-4xl.font-semibold.text-primary.mb-4 "Testimonials"]
