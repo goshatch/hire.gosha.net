@@ -68,7 +68,9 @@ module.exports = {
     // Project carousel classes
     'scrollbar-hide',
     'line-clamp-2',
-    'flex-shrink-0'
+    'flex-shrink-0',
+    'h-[40vh]',
+    'md:h-[50vh]'
   ],
   plugins: [],
 }
