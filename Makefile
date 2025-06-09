@@ -20,10 +20,10 @@ REMOTE_PATH = /var/www/hire.gosha.net
 all: build
 
 dev:
-	npm run dev
+	bun run dev
 
 build:
-	npx shadow-cljs release release
+	bun run build
 
 deploy: build
 	rsync -rvlh --progress --delete dist/ $(REMOTE_HOST):$(REMOTE_PATH)

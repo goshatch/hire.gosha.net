@@ -72,5 +72,7 @@ module.exports = {
     'h-[40vh]',
     'md:h-[50vh]'
   ],
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
