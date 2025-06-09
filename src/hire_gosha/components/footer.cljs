@@ -13,7 +13,7 @@
      {:class "flex flex-col md:flex-row md:justify-between gap-8"}
      [:div
       [:h3 {:class "font-semibold mb-4"} "I am unfortunately very online"]
-      [:div {:class "flex flex-col md:flex-row gap-4"}
+      [:div {:class "flex flex-col lg:flex-row gap-4"}
        (social-link {:href "https://gosha.net" :emoji "🏴‍☠️" :label "Online Homepage"})
        (social-link {:href "https://linkedin.com/in/goshatch" :emoji "💼" :label "LinkedIn"})
        (social-link {:href "https://github.com/goshatch" :emoji "🐙" :label "GitHub"})
