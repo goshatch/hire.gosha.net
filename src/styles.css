@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -16,6 +17,9 @@
   --color-link-hover: var(--color-highlight);
   --color-neutral: rgba(128, 128, 128, 0.3);
   --color-testimonials-bg: white;
+
+  /* DaisyUI overrides */
+  --card-p: 1rem 0;
 
   /* Fonts */
   --font-sans: "Inter", system-ui, sans-serif;
@@ -224,4 +228,21 @@ code {
 
 .bg-surface {
   background-color: var(--color-testimonials-bg) !important;
+}
+
+.carousel .carousel-item {
+  flex: auto;
+}
+
+.carousel .carousel-item:last-child {
+  margin-right: 1rem;
+}
+
+.carousel .card {
+  border-radius: 0px;
+}
+
+.carousel .card figure {
+  width: max-content;
+  border-radius: var(--radius-box);
 }
