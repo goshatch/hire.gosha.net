@@ -22,7 +22,47 @@
     {:name "Long-form Writing" :icon "✍️"}]
 
    :projects
-   []
+   [{:title "Parts: a toolkit for IFS practitioners"
+     :company "A Possible Space"
+     :year "2024-2025"
+     :description "A mapping tool built for Internal Family Systems therapists and their clients. Clojure backend, ClojureScript frontend, highly interactive canvas UI, with multiplayer collaboration in the works."
+     :image "/images/projects/parts-alt.jpg"
+     :link "https://parts.ifs.tools"
+     :github "https://github.com/apossiblespace/parts"}
+
+    {:title "Internal tooling in massive growth"
+     :company "Indeed Flex"
+     :year "2021-2025"
+     :description "Full-stack enablement work, with a focus on observability/monitoring. Led frontend migration to a microfrontend architecture, introduced org-wide contract testing, and mentored junior engineers."
+     :image "/images/projects/flex.jpg"
+     :link "https://www.indeedflex.co.uk"}
+
+    {:title "Natural Sitter: a pet sitting marketplace"
+     :company "株式会社るりら"
+     :year "2020-2021"
+     :description "Solo dev on a full-featured pet sitting marketplace: progressively enhanced HTML, full I18n, automated CI/CD, and near-total test coverage."
+     :image "/images/projects/naturalsitter.jpg"}
+
+    {:title "Mobile Web level up"
+     :company "Moneytree"
+     :year "2016-2017"
+     :description "Helped transition the mobile web app from Angular to React, which included some prety gnarly hacks like running a React application inside an Angular shell, all in the name of keeping features shipping."
+     :image "/images/projects/moneytree.jpg"
+     :link "https://getmoneytree.com"}
+
+    {:title "Designing an engineering organisation"
+     :company "AQ"
+     :year "2013-2016"
+     :description "Designed engineering systems, processes, and playbooks for a new technical organisation within AQ's established product design business. Clients included Google, Asics, Medium, Airbnb, etc."
+     :image "/images/projects/aq.jpg"
+     :link "https://aqworks.com"}
+
+    {:title "Pioneering mobile Web"
+     :company "Cookpad Japan"
+     :year "2011-2013"
+     :description "Launched the mobile web version of one of Japan's highest-traffic sites at the start of the smartphone era. Heavy emphasis on performance and bandwidth efficiency. Serving millions monthly."
+     :image "/images/projects/cookpad.jpg"
+     :link "https://cookpad.jp"}]
 
    :testimonials
    [{:quote "I've shipped many products with Gosha over the x years we worked together. He's a versatile full stack developer with a knack for design—a solid tech partner for any challenge."
