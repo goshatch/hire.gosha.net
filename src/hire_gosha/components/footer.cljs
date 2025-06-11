@@ -4,7 +4,7 @@
 (defn footer []
   [:footer.py-8
    [:div.mt-20.text-center
-    [:a.btn.btn-bounce.px-12.py-6.text-2xl.font-bold.rounded-full.shadow-lg
+    [:a.btn.btn-xl.btn-bounce.rounded-full.shadow-lg
      {:href "https://cal.com/a.possible.space/30min" :id "bottom-cta"}
      "🤙 Book a 30-min call"]]
 
@@ -27,6 +27,8 @@
        [:a {:href "https://clojurescript.org"} "ClojureScript"]
        ", "
        [:a {:href "https://replicant.fun"} "Replicant"]
+       ", "
+       [:a {:href "https://daisyui.com"} "daisyUI"]
        ", and "
        [:a {:href "https://tailwindcss.com"} "Tailwind CSS"]
        "."]

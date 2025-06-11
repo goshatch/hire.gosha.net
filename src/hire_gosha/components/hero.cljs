@@ -13,10 +13,10 @@
       "Full-stack, 20 years of experience, looking for work!"]
      [:div.flex.flex-col.md:flex-row.gap-4.mt-6
       [:div
-      [:a.btn.btn-pop.rounded-full.px-6.py-3
-       {:href "https://cal.com/a.possible.space/30min"}
-       "👉 Let's talk!"]]
+       [:a.btn.btn-lg.btn-primary.btn-pop.rounded-full
+        {:href "https://cal.com/a.possible.space/30min"}
+        "👉 Book a 30-min call"]]
       [:div
-      [:a.btn.outline.rounded-full.px-6.py-3
-       {:href "https://linkedin.com/in/goshatch" :target "_blank"}
-       "💼 Connect on LinkedIn"]]]]]])
+       [:a.btn.btn-lg.btn-outline.rounded-full
+        {:href "https://linkedin.com/in/goshatch" :target "_blank"}
+        "💼 Connect on LinkedIn"]]]]]])

@@ -11,4 +11,4 @@
      [:h4.text-lg.font-semibold.text-primary.mb-1 title]
      [:p.text-sm.text-secondary.mb-2
       company " • " year]
-     [:p.text-sm.text-primary.line-clamp-2 description]]]])
+     [:p.text-sm.text-primary description]]]])
