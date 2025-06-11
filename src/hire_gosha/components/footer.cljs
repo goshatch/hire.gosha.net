@@ -4,7 +4,7 @@
 (defn footer []
   [:footer.py-8
    [:div.mt-20.text-center
-    [:a.btn.btn-xl.btn-bounce.rounded-full.shadow-lg
+    [:a.btn.btn-xl.btn-primary.btn-bounce.rounded-full.shadow-lg.no-underline
      {:href "https://cal.com/a.possible.space/30min" :id "bottom-cta"}
      "🤙 Book a 30-min call"]]
 
