@@ -4,6 +4,7 @@
 (defn footer []
   [:footer.py-8
    [:div.mt-20.text-center
+    [:p.mb-6 "Do you feel I would be a good fit for your project? Let's talk."]
     [:a.btn.btn-xl.btn-primary.btn-bounce.rounded-full.shadow-lg.no-underline
      {:href "https://cal.com/a.possible.space/30min" :id "bottom-cta"}
      "🤙 Book a 30-min call"]]

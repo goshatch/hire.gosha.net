@@ -6,7 +6,7 @@
 
 :root {
   /* Colors from gosha.net - Light theme */
-  --color-bg: oklch(0.916374 0.034554 90.5157);
+  --color-bg: oklch(0.98 0.04 90.51);
   --color-text: oklch(0.37 0 0);
   --color-text-subdued: oklch(0.5 0 0);
   --color-link: oklch(0 0 0);
@@ -22,14 +22,14 @@
   --card-p: 1rem 0;
 
   --color-primary: oklch(0 0 0); /* primary - matches --color-primary */
-  --color-primary-content: oklch(0.916374 0.034554 90.5157); /* primary-content - matches --color-bg */
+  --color-primary-content: oklch(0.98 0.04 90.51); /* primary-content - matches --color-bg */
   --color-secondary: oklch(0.5 0 0); /* secondary - matches --color-text-subdued */
-  --color-secondary-content: oklch(0.916374 0.034554 90.5157); /* secondary-content - matches --color-bg */
+  --color-secondary-content: oklch(0.98 0.04 90.51); /* secondary-content - matches --color-bg */
   --color-accent: oklch(0.65 0.17 25.12); /* accent - matches --color-highlight */
-  --color-accent-content: oklch(0.916374 0.034554 90.5157); /* accent-content - matches --color-bg */
+  --color-accent-content: oklch(0.98 0.04 90.51); /* accent-content - matches --color-bg */
   --color-neutral: oklch(0.5 0 0); /* neutral - based on --color-text-subdued */
-  --color-neutral-content: oklch(0.916374 0.034554 90.5157); /* neutral-content - matches --color-bg */
-  --color-base-100: oklch(0.916374 0.034554 90.5157); /* base-100 - matches --color-bg */
+  --color-neutral-content: oklch(0.98 0.04 90.51); /* neutral-content - matches --color-bg */
+  --color-base-100: oklch(0.98 0.04 90.51); /* base-100 - matches --color-bg */
   --color-base-200: oklch(0.882722 0.049418 91.7743); /* base-200 - matches --color-emphasis */
   --color-base-300: oklch(0.85 0.05 90); /* base-300 - slightly lighter than emphasis */
   --color-base-content: oklch(0.37 0 0); /* base-content - matches --color-text */
