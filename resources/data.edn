@@ -15,6 +15,7 @@
           {:name "Lisp" :icon "🛸"}
           {:name "Leadership" :icon "👥"}
           {:name "Mentoring" :icon "🎯"}
+          {:name "AI Workflows" :icon "🤖"}
           {:name "CI/CD" :icon "🔄"}
           {:name "TDD" :icon "🧪"}
           {:name "Observability" :icon "👁️"}
