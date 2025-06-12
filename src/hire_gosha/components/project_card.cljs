@@ -1,7 +1,7 @@
 (ns hire-gosha.components.project-card)
 
 (defn project-card [{:keys [title company year description image link github important]}]
-  [:div.carousel-item.ml-4
+  [:div.carousel-item
    [:div.card.w-fit
     [:figure
      [:img {:class ["h-[50vh]"]

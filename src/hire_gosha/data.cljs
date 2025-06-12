@@ -26,7 +26,7 @@
      :company "A Possible Space"
      :year "2024-2025"
      :description "A mapping tool built for Internal Family Systems therapists and their clients. Clojure backend, ClojureScript frontend, highly interactive canvas UI, with multiplayer collaboration in the works."
-     :image "/images/projects/parts-alt.jpg"
+     :image "/images/projects/parts.jpg"
      :link "https://parts.ifs.tools"
      :github "https://github.com/apossiblespace/parts"}
 

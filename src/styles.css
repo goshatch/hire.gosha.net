@@ -256,10 +256,11 @@ code {
 
 .carousel .carousel-item {
   flex: auto;
+  padding-right: 1rem;
 }
 
-.carousel .carousel-item:last-child {
-  margin-right: 1rem;
+.carousel .carousel-item:first-child {
+  padding-left: 1rem;
 }
 
 .carousel .card {
