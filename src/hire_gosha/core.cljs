@@ -2,7 +2,6 @@
   (:require
    [hire-gosha.components.footer :refer [footer]]
    [hire-gosha.components.hero :refer [hero]]
-   [hire-gosha.components.project-card :as project-card]
    [hire-gosha.components.projects :refer [projects]]
    [hire-gosha.components.skills :refer [skills]]
    [hire-gosha.components.testimonials :refer [testimonials]]
