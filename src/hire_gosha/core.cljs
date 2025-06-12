@@ -16,7 +16,7 @@
     (d/render app-element (app))))
 
 (defn app []
-  [:div.relative.isolate.pt-24.pb-32
+  [:div.relative.isolate.pt-24.pb-16
    (hero)
    (projects (:projects data/site-data))
    (skills (:skills data/site-data))
