@@ -21,7 +21,9 @@
         {:href "#contact"}
         "More options"]]]
      [:p.mt-12
-      "It’s nice to meet you! I am a true generalist: I am happiest when I can take ownership of problems and contribute across the entire stack, without being siloed to a specific part of it. Backend, frontend, infra, UI, UX, building and mentoring engineering teams — I have done it all over the course of my career."]
+      "It’s nice to meet you!"]
+      [:p.mt-4
+       "I am a true generalist: I am happiest when I can take ownership of problems and contribute across the entire stack, without being siloed to a specific part of it. Backend, frontend, infra, UI, UX, building and mentoring engineering teams — I have done it all over the course of my career."]
      [:p.mt-4
       "Currently, I am looking to join a company where I could work on hard problems, share what I know, and grow together with the team over the next many years."]
      [:p.mt-4

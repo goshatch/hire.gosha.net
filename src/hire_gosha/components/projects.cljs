@@ -3,7 +3,7 @@
 
 (defn projects [projects]
   (let [sorted-projects (sort-by #(if (:important %) 0 1) projects)]
-    [:div.w-full.pb-16
+    [:div.w-full.pb-8
      [:div.carousel.carousel-center.w-full
       (for [project sorted-projects]
         ^{:key (:title project)}
