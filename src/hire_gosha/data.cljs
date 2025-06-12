@@ -11,6 +11,7 @@
     {:name "Lisp" :icon "🛸"}
     {:name "Leadership" :icon "👥"}
     {:name "Mentoring" :icon "🎯"}
+    {:name "AI Workflows" :icon "🤖"}
     {:name "CI/CD" :icon "🔄"}
     {:name "TDD" :icon "🧪"}
     {:name "Observability" :icon "👁️"}
@@ -32,7 +33,7 @@
      :gh-username "apossiblespace"
      :gh-repo "parts"}
 
-    {:title "Internal tooling in massive growth"
+    {:title "Internal tooling during massive growth"
      :company "Indeed Flex"
      :company-link "https://www.indeedflex.co.uk"
      :year "2021-2025"
@@ -64,8 +65,7 @@
      :company-link "https://cookpad.jp"
      :year "2011-2013"
      :description "Launched the mobile web version of one of Japan's highest-traffic sites at the start of the smartphone era. Heavy emphasis on performance and bandwidth efficiency. Serving millions monthly."
-     :image "/images/projects/cookpad.jpg"
-     }]
+     :image "/images/projects/cookpad.jpg"}]
 
    :testimonials
    [{:quote "I've shipped many products with Gosha over the x years we worked together. He's a versatile full stack developer with a knack for design—a solid tech partner for any challenge."
