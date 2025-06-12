@@ -274,3 +274,13 @@ code {
 .carousel .card .card-body {
   flex: none;
 }
+
+.profile-photo {
+  overflow-x: clip;
+}
+
+@media (min-width: 768px) {
+  .profile-photo {
+    overflow-x: visible;
+  }
+}

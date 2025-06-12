@@ -3,7 +3,7 @@
 (defn hero []
   [:div.relative
    [:div.flex.flex-col.lg:flex-row.lg:items-center.gap-8.lg:gap-12.mb-16
-    [:div.flex-shrink-0
+    [:div.flex-shrink-0.profile-photo
      [:img.w-120.h-80.lg:w-144.lg:h-96.rounded-sm.shadow-2xl.border-8.border-white.transform.-rotate-3.object-cover
       {:src "/images/profile.jpg" :alt "Gosha Tcherednitchenko"}]]
     [:div.flex-1.px-6.lg:px-8
