@@ -8,17 +8,17 @@
     {:href "https://cal.com/a.possible.space/30min" :id "bottom-cta"}
     "🤙 Book a 30-min call"]
    [:a
-    {:class "btn mb-4 btn-block btn-lg rounded-full no-underline"
+    {:class ["btn" "mb-4" "btn-block" "btn-lg" "rounded-full" "no-underline"]
      :href "mailto:gosha@gosha.net"}
     "💌 Email"]
    [:a
-    {:class "btn mb-4 btn-block btn-lg rounded-full no-underline"
+    {:class ["btn" "mb-4" "btn-block" "btn-lg" "rounded-full" "no-underline"]
      :href "/assets/gosha-tcherednitchenko-2025.pdf"}
     "📄 Download CV"]
    [:a
     {:href "https://linkedin.com/in/goshatch"
      :target "_blank"
-     :class "btn btn-block btn-lg rounded-full bg-[#0967C2] text-white border-[#0059b3] no-underline"}
+     :class ["btn" "btn-block" "btn-lg" "rounded-full" "bg-[#0967C2]" "text-white" "border-[#0059b3]" "no-underline"]}
     [:svg
      {:aria-label "LinkedIn logo",
       :width "16",

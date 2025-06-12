@@ -10,7 +10,8 @@
       "Bash(npx tailwindcss:*)",
       "Bash(ls:*)",
       "Bash(npx shadow-cljs:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(rg:*)"
     ],
     "deny": []
   }
