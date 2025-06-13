@@ -68,7 +68,7 @@
      :image "/images/projects/cookpad.jpg"}]
 
    :testimonials
-   [{:quote "I've shipped many products with Gosha over the x years we worked together. He's a versatile full stack developer with a knack for design—a solid tech partner for any challenge."
+   [{:quote "I've shipped many products with Gosha over the many years we worked together. He's a versatile full stack developer with a knack for design—a solid tech partner for any challenge."
      :author "Tomomi Sasaki"
      :title "Partner at design studio AQ"
      :url "https://aqworks.com"
