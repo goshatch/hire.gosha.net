@@ -86,6 +86,12 @@
      :url "https://jonathontoon.com"
      :photo "/images/people/jonathon.jpg"}
 
+    {:quote "I worked as an engineer with Gosha. I have learned so much through our time building things together. He’s a curious, smart and well rounded engineer. On top of this, he is a funny and kind person. I would love to crack problems with him again any time I have the opportunity."
+     :author "Marion Kamoike-Bouguet"
+     :title "Senior Engineering Manager at Strapi"
+     :url "https://www.linkedin.com/in/m-kb/"
+     :photo "/images/people/marion.jpg"}
+
     {:quote "Gosha is a talented full-stack engineer with a knack for delivering intuitive user experiences. He cares about outcomes, delivers high quality work, and is a great addition to any startup or established engineering team."
      :author "Charles Abbott"
      :title "Senior Director, Engineering at Workiva"
