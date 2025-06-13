@@ -12,7 +12,7 @@
          [:a {:href link :target "_blank"} image]
          image)]
       [:div.card-body
-       [:h4.text-lg.font-semibold.text-primary.mb-1
+       [:p.text-lg.font-semibold.text-primary.mb-1
         (if link
           [:a {:href link :target "_blank"} title]
           title)]
@@ -24,4 +24,5 @@
        (when (and gh-username gh-repo)
          [:a {:href (str "https://github.com/" gh-username "/" gh-repo) :target "_blank"}
           [:img {:src (str "https://img.shields.io/github/stars/" gh-username "/" gh-repo)
+                 :alt (str "An illustration for the project " title)
                  :loading "lazy"}]])]]]))

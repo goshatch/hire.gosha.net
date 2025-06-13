@@ -9,7 +9,7 @@
     [:div.border-t.border-gray-500.pt-8
      {:class ["flex" "flex-col" "md:flex-row" "md:justify-between" "gap-8"]}
      [:div
-      [:h3.mb-4 "I am very online:"]
+      [:p.font-bold.mb-4 "I am very online:"]
       [:div {:class ["flex" "flex-col" "lg:flex-row" "gap-4"]}
        (social-link {:href "https://gosha.net" :emoji "🏴‍☠️" :label "Homepage"})
        (social-link {:href "https://linkedin.com/in/goshatch" :emoji "💼" :label "LinkedIn"})
@@ -18,7 +18,7 @@
        (social-link {:href "https://twitter.com/goshatch" :emoji "🐦" :label "Twitter"})
        (social-link {:href "https://bsky.app/profile/gosha.net" :emoji "🦋" :label "Bluesky"})]]
      [:div.flex-shrink-0
-      [:h3.mb-4 "About this page"]
+      [:p.font-bold.mb-4 "About this page"]
       [:p
        "Built with "
        [:a {:href "https://clojurescript.org"} "ClojureScript"]
