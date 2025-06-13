@@ -4,12 +4,14 @@
   [:figure.rounded-2xl.bg-surface.p-6.shadow-lg.ring-1
    [:blockquote.text-primary
     [:p quote]]
-   [:figcaption.mt-6.flex.gap-x-4
-    [:img.size-10.mt-1.rounded-full.bg-surface
-     {:src photo :alt author}]
+   [:figcaption.mt-4.flex.gap-x-3
+    [:div.avatar
+     [:div.w-12.h-12.rounded-full
+      [:img
+       {:src photo :alt author}]]]
     [:div
-     [:div.font-semibold
+     [:div.font-semibold.mb-1
       (if url
         [:a {:href url} author]
         author)]
-     [:div.text-secondary title]]]])
+     [:div.text-neutral.text-xs title]]]])

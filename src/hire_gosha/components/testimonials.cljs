@@ -1,5 +1,5 @@
 (ns hire-gosha.components.testimonials
-  (:require [hire-gosha.components.testimonial :as testimonial]))
+  (:require [hire-gosha.components.testimonial :refer [testimonial]]))
 
 (defn split-into-columns "Split collection into exactly num-columns columns, prioritizing middle columns for extra items"
   [coll num-columns]
@@ -18,7 +18,7 @@
         columns
         (let [priority-rank (.indexOf middle-cols col-index)
               gets-extra? (< priority-rank extra-items)
-              items-in-this-column (+ base-items-per-column 
+              items-in-this-column (+ base-items-per-column
                                       (if gets-extra? 1 0))
               column (take items-in-this-column remaining)
               new-remaining (drop items-in-this-column remaining)]
@@ -36,6 +36,6 @@
       (for [[index column] (map-indexed vector testimonial-columns)]
         ^{:key (str "testimonial-column-" index)}
         [:div.space-y-8
-         (for [testimonial column]
-           ^{:key (:author testimonial)}
-           (testimonial/testimonial testimonial))])]]))
+         (for [item column]
+           ^{:key (:author item)}
+           (testimonial item))])]]))
