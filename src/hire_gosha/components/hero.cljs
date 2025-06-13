@@ -1,7 +1,7 @@
 (ns hire-gosha.components.hero)
 
 (defn hero []
-  [:div.relative
+  [:div.relative.max-w-7xl.mx-auto
    [:div.flex.flex-col.lg:flex-row.lg:items-center.gap-8.lg:gap-12.mb-16
     [:div.flex-shrink-0.profile-photo
      [:img.w-120.h-80.lg:w-144.lg:h-96.rounded-sm.shadow-2xl.border-8.border-white.transform.-rotate-3.object-cover
