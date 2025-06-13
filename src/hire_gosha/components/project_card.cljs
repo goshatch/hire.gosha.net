@@ -3,7 +3,8 @@
 (defn project-card [{:keys [title company company-link year description image link gh-username gh-repo]}]
   (let [image [:img {:class ["h-[50vh]"]
                      :src image
-                     :alt title}]]
+                     :alt title
+                     :loading "lazy"}]]
     [:div.carousel-item
      [:div.card.w-fit
       [:figure
@@ -22,4 +23,5 @@
        [:p.text-sm.text-primary description]
        (when (and gh-username gh-repo)
          [:a {:href (str "https://github.com/" gh-username "/" gh-repo) :target "_blank"}
-          [:img {:src (str "https://img.shields.io/github/stars/" gh-username "/" gh-repo)}]])]]]))
+          [:img {:src (str "https://img.shields.io/github/stars/" gh-username "/" gh-repo)
+                 :loading "lazy"}]])]]]))

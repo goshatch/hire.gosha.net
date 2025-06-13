@@ -8,7 +8,7 @@
     [:div.avatar
      [:div.w-12.h-12.rounded-full
       [:img
-       {:src photo :alt author}]]]
+       {:src photo :alt author :loading "lazy"}]]]
     [:div
      [:div.font-semibold.mb-1
       (if url
