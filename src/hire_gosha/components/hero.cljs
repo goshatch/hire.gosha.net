@@ -27,7 +27,7 @@
      [:p.mt-4
       "Currently, I am looking to join a company where I could work on hard problems, share what I know, and grow together with the team over the next many years."]
      [:p.mt-4
-      "I live in London 🇬🇧 with my partner and soon-to-be-two kids. I can work in both the UK and in the EU, and do not require visa sponsorship."]
+      "I live in 🇬🇧 London with my 👩🏻 partner and 👧🏻👶🏻 two kids. I can work in both the UK and in the EU, and do not require visa sponsorship."]
      [:p.mt-4
       "Please take a look at my past work and skills below, and reach out if you feel I would we would be a good fit."]
      [:p.mt-4
