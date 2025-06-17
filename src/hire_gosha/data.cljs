@@ -110,6 +110,12 @@
      :url "https://www.linkedin.com/in/nahoko-tateyama/"
      :photo "/images/people/nahoko.jpg"}
 
+    {:quote "At AQ, a design-led client services studio, we often ask a lot of our engineers—fluency across the stack, close collaboration with designers and clients, and a strong sense of product and UX strategy. Gosha brought all of this, with technical leadership grounded in the bigger picture and a consistent commitment to craft and quality"
+     :author "Chris Palmieri"
+     :title "Managing Director at AQ"
+     :url "https://aqworks.com"
+     :photo "/images/people/chris.jpg"}
+
     {:quote "Gosha brought a strong mix of front-end engineering and design skills when we worked together at Cookpad. He helped build out the mobile web version with solid work in Ruby, JavaScript, and CSS, and his ability to move between design and code made things smoother for the whole team."
      :author "Viktor Kelemen"
      :url "https://www.linkedin.com/in/viktorkelemen/"
