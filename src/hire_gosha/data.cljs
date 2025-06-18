@@ -74,6 +74,12 @@
      :url "https://aqworks.com"
      :photo "/images/people/tomomi.jpg"}
 
+    {:quote "Our paths have crossed multiple times in various contexts. Gosha can do anything, really. The job title \"Full-Stack Engineer\" only partially describes the breadth of his skillset. He is an extremely rare profile, so if you need someone who can go deep and wide, make sure not to pass on him!"
+     :author "Julien Feltesse"
+     :title "Software Engineer"
+     :url "https://feltesse.jp"
+     :photo "/images/people/julien.jpg"}
+
     {:quote "I've worked with Gosha on many projects over the years. Not only is he an excellent developer and expert in his craft, but he's also a true \"maker\", deeply curious and engaged in every aspect of product development. He brings the same level of attention to both the technical implementation and the user experience. As a designer, that quality makes him easily one of my favorite software developers to work with."
      :author "Mathieu Mayer"
      :title "Designer & Developer"
