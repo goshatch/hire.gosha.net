@@ -50,7 +50,7 @@
      :company "Moneytree"
      :company-link "https://getmoneytree.com"
      :year "2016-2017"
-     :description "Helped transition the mobile web app from Angular to React, which included some prety gnarly hacks like running a React application inside an Angular shell, all in the name of keeping features shipping."
+     :description "Helped transition the mobile web app from Angular to React, which included some pretty gnarly hacks like running a React application inside an Angular shell, all in the name of keeping features shipping."
      :image "/images/projects/moneytree.jpg"}
 
     {:title "Designing an engineering organisation"
