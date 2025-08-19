@@ -10,7 +10,8 @@
      [:h1.text-5xl.font-bold.text-primary.leading-tight
       "Hi, I’m " [:a.underline {:href "https://gosha.net"} "Gosha"] " 👋"]
      [:p.text-4xl.font-bold.leading-tight.mt-4
-      "Full-stack, 20 years of experience, looking for work!"]
+      "Full-stack, 20 years of experience, "
+      [:span.line-through "looking for work!"]]
      [:div.flex.flex-col.md:flex-row.gap-4.mt-6
       [:div
        [:a.btn.btn-lg.btn-primary.btn-pop.rounded-full.no-underline
@@ -25,16 +26,15 @@
      [:p.mt-4
       "I am a true generalist: I am happiest when I can take ownership of problems and contribute across the entire stack, without being siloed to a specific part of it. Backend, frontend, infra, UI, UX, building and mentoring engineering teams — I have done it all over the course of my career."]
      [:p.mt-4
-      "Currently, I am looking to join a company where I could work on hard problems, share what I know, and grow together with the team over the next many years."]
-     [:p.mt-4
       "I live in 🇬🇧 London with my 👩🏻 partner and 👧🏻👶🏻 two kids. I can work in both the UK and in the EU, and do not require visa sponsorship."]
-     [:p.mt-4
+     [:p.mt-4.line-through
+      "Currently, I am looking to join a company where I could work on hard problems, share what I know, and grow together with the team over the next many years."]
+     [:p.mt-4.line-through
       "Please take a look at my past work and skills below, and reach out if you feel I would we would be a good fit."]
      [:p.mt-4
       [:span.text-sm.font-semibold
        "Current status: "]
       [:div.badge.badge-accent.font-semibold
        [:div {:class ["inline-grid" "*:[grid-area:1/1]"]}
-        [:div {:class ["status" "status-success" "animate-ping"]}]
-        [:div {:class ["status" "status-success"]}]]
-       [:span.color-black.text-sm "Interviewing"]]]]]])
+        [:div {:class ["status"]}]]
+       [:span.color-black.text-sm "No longer available"]]]]]])
