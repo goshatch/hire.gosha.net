@@ -1,3 +1,5 @@
+⚠️ NOTE: This website has now been integrated [into my personal homepage](https://gosha.net/hire). See the [relevant repo](https://github.com/goshatch/gosha.net).
+
 # Hire Gosha!
 
 I will write a proper README eventually, but for now this is a little placeholder to acknowledge that proper documentation is important for open source projects.
